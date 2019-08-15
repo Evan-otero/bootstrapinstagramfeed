@@ -1,0 +1,53 @@
+.wrapper{
+  margin: 0px;
+  padding: 0px;
+}
+#navbarright{
+  display: flex;
+  flex-direction: row;
+}
+#layout{
+  padding-top: 50px;
+}
+#list{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin-right: : auto;
+  margin-left: auto;
+  font-size: 25px;
+}
+#nav-item{
+  padding: 10px;
+}
+.container-postspace{
+  padding-bottom: 25px;
+}
+.card-header{
+  display: flex;
+}
+.bottom-box{
+  padding: 10px
+}
+.iconcomment{
+  color: grey;
+}
+#heart{
+  font-size: 25px;
+  color: grey;
+}
+#ellipsis{
+  font-size: 25px;
+  text-align: right;
+  color: grey;
+}
+#modalicons{
+  display: flex;
+}
+#camera{
+  border: 2px;
+  padding-right: 2px;
+}
+#marker{
+  border: 2px;
+}
