@@ -1,6 +1,8 @@
-.wrapper{
-  margin: 0px;
-  padding: 0px;
+body{
+  margin:0px;
+}
+#wrapper{
+  background-color: lightgrey;
 }
 #navbarright{
   display: flex;
@@ -8,6 +10,7 @@
 }
 #layout{
   padding-top: 50px;
+  background-color: white;
 }
 #list{
   display: flex;
@@ -46,8 +49,23 @@
 }
 #camera{
   border: 2px;
-  padding-right: 2px;
+  padding-right: 20px;
 }
 #marker{
   border: 2px;
+}
+.grid{
+  padding: 0px;
+}
+#btn{
+  background-color: grey;
+  color:white;
+}
+#btn:active{
+  background-color: white;
+  color: grey;
+}
+#icons{
+  display: flex;
+  padding-top: 20px;
 }

@@ -12,13 +12,15 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <div id="wrapper" class="container">
-      <nav id="navbar" class="navbar navbar-light bg-light fixed-top">
-        <a class="navbar-brand" href="#">
-          <img src="https://d1afx9quaogywf.cloudfront.net/sites/default/files/Logos/Instagram400x230.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    <div id="wrapper" class="container-fluid">
+      <nav id="navbar" class="navbar navbar-light bg-light fixed-top row">
+        <div class="col-md-1"></div>
+        <a class="navbar-brand col-md-1" href="#">
+          <i class="fab fa-instagram"></i>
           Instagram
         </a>
-        <ul id="navbarright" class="nav navbar-nav navbar-right" style="flex:">
+        <div class="col-md-1"></div>
+        <ul id="navbarright" class="nav navbar-nav navbar-right col-md-2" style="flex:">
           <!-- Button trigger modal -->
           <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
             Create new post
@@ -37,28 +39,32 @@
             </div>
             </li>
           </ul>
+          <div class="col-md-1"></div>
     </nav>
     <div id="layout" class="row">
-          <div id="navtab" class="nav nav-tabs col-lg-12">
+      <div class="col-lg-1"></div>
+          <div id="navtab" class="nav nav-tabs col-lg-10">
             <ul id="list" class="navbar-nav mr-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="#"><i class="fas fa-th"></i> <span class="sr-only">(current)</span></a>
+                <a class="btn btn-primary" type="button" id="btn" data-toggle="collapse" data-target=".collapse"> <i class="fas fa-th"></i> <span class="sr-only">(current)</span></a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-square"></i></a>
+              <li class="nav-item active">
+                <a class="btn btn-primary" type="button" id="btn" data-toggle="collapse" data-target=".collapse" background-color="grey"><i class="fas fa-square"></i></a>
               </li>
             </ul>
           </div>
+          <div class="col-lg-1"></div>
     </div>
+    <div id="collapsepost" class="collapse">
     <div class="container-postspace">
       <div class="row">
-        <div class="col-md-2">
+        <div class="col-lg-3">
         </div>
-        <div class="col-md-8">
+        <div class="col-lg-6">
           <div class="card">
             <div class="card-header" "row">
-              <div class="col-md-11">Card title</div>
-              <div class="text-right" "col-md-1">12/15</div>
+              <div class="col-lg-11">Card title</div>
+              <div class="text-right" "col-lg-1">12/15</div>
             </div>
             <img class="card-img-top" src="https://cdn-prod.medicalnewstoday.com/content/images/articles/322/322868/golden-retriever-puppy.jpg" alt="Card image cap">
             <div class="bottom-box">
@@ -67,10 +73,10 @@
               </div>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               <div class="row" "iconcomment">
-                <div class="col-md-1  ">
+                <div class="col-lg-1  ">
                   <i id="heart" class="far fa-heart"></i>
                 </div>
-                <div class="col-md-10">
+                <div class="col-lg-10">
                   <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Comment...">
                 </div>
                 <div id="ellipsis" class="col-md.1">
@@ -80,147 +86,149 @@
             </div>
         </div>
         </div>
-        <div class="col-md-2">
+        <div class="col-lg-3">
         </div>
       </div>
     </div>
     <div class="container-postspace">
       <div class="row">
-        <div class="col-md-2">
+        <div class="col-lg-3">
         </div>
-        <div class="col-md-8">
+        <div class="col-lg-6">
           <div class="card">
             <div class="card-header" "row">
-              <div class="col-md-11">Card title</div>
-              <div class="text-right" "col-md-1">12/15</div>
+              <div class="col-lg-11">Card title</div>
+              <div class="text-right" "col-lg-1">12/15</div>
             </div>
             <img class="card-img-top" src="https://cdn-prod.medicalnewstoday.com/content/images/articles/322/322868/golden-retriever-puppy.jpg" alt="Card image cap">
             <div class="bottom-box">
-            <div class="likes">
-            <strong>Likes</strong>
+              <div class="likes">
+                <strong>Likes</strong>
+              </div>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="row" "iconcomment">
+                <div class="col-lg-1  ">
+                  <i id="heart" class="far fa-heart"></i>
+                </div>
+                <div class="col-lg-10">
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Comment...">
+                </div>
+                <div id="ellipsis" class="col-md.1">
+                  <i class="fas fa-ellipsis-v"></i>
+                </div>
+              </div>
             </div>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <div class="row" "iconcomment">
-              <div class="col-md-1  ">
-                <i id="heart" class="far fa-heart"></i>
-              </div>
-              <div class="col-md-10">
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Comment...">
-              </div>
-              <div id="ellipsis" class="col-md.1">
-                <i class="fas fa-ellipsis-v"></i>
-              </div>
-            </div>
-          </div>
         </div>
         </div>
-        <div class="col-md-2">
+        <div class="col-lg-3">
         </div>
       </div>
     </div>
     <div class="container-postspace">
       <div class="row">
-        <div class="col-md-2">
+        <div class="col-lg-3">
         </div>
-        <div class="col-md-8">
+        <div class="col-lg-6">
           <div class="card">
             <div class="card-header" "row">
-              <div class="col-md-11">Card title</div>
-              <div class="text-right" "col-md-1">12/15</div>
+              <div class="col-lg-11">Card title</div>
+              <div class="text-right" "col-lg-1">12/15</div>
             </div>
             <img class="card-img-top" src="https://cdn-prod.medicalnewstoday.com/content/images/articles/322/322868/golden-retriever-puppy.jpg" alt="Card image cap">
             <div class="bottom-box">
-            <div class="likes">
-            <strong>Likes</strong>
+              <div class="likes">
+                <strong>Likes</strong>
+              </div>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="row" "iconcomment">
+                <div class="col-lg-1  ">
+                  <i id="heart" class="far fa-heart"></i>
+                </div>
+                <div class="col-lg-10">
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Comment...">
+                </div>
+                <div id="ellipsis" class="col-md.1">
+                  <i class="fas fa-ellipsis-v"></i>
+                </div>
+              </div>
             </div>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <div class="row" "iconcomment">
-              <div class="col-md-1  ">
-                <i id="heart" class="far fa-heart"></i>
-              </div>
-              <div class="col-md-10">
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Comment...">
-              </div>
-              <div id="ellipsis" class="col-md.1">
-                <i class="fas fa-ellipsis-v"></i>
-              </div>
-            </div>
-          </div>
         </div>
         </div>
-        <div class="col-md-2">
+        <div class="col-lg-3">
         </div>
       </div>
     </div>
-    <div class="row">
+    </div>
+
+    <div id="collapsegrid" class="collapse show">
+    <div class="row no-gutters height="33%"">
       <div class="col-lg-4">
-        <div class="card" style="width: 18rem;">
+        <div class="card">
           <img class="card-img-top" src="https://cdn-prod.medicalnewstoday.com/content/images/articles/322/322868/golden-retriever-puppy.jpg" alt="Card image cap">
         </div>
       </div>
       <div class="col-lg-4">
-        <div class="card" style="width: 18rem;">
+        <div class="card">
           <img class="card-img-top" src="https://cdn-prod.medicalnewstoday.com/content/images/articles/322/322868/golden-retriever-puppy.jpg" alt="Card image cap">
         </div>
       </div>
       <div class="col-lg-4">
-        <div class="card" style="width: 18rem;">
+        <div class="card">
           <img class="card-img-top" src="https://cdn-prod.medicalnewstoday.com/content/images/articles/322/322868/golden-retriever-puppy.jpg" alt="Card image cap">
         </div>
       </div>
+      <div class="row no-gutters height="33%"">
+        <div class="col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="https://cdn-prod.medicalnewstoday.com/content/images/articles/322/322868/golden-retriever-puppy.jpg" alt="Card image cap">
+          </div>
         </div>
-        <div class="row">
+        <div class="col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="https://cdn-prod.medicalnewstoday.com/content/images/articles/322/322868/golden-retriever-puppy.jpg" alt="Card image cap">
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="https://cdn-prod.medicalnewstoday.com/content/images/articles/322/322868/golden-retriever-puppy.jpg" alt="Card image cap">
+          </div>
+        </div>
+        <div class="row no-gutters height="33%"">
           <div class="col-lg-4">
-            <div class="card" style="width: 18rem;">
+            <div class="card">
               <img class="card-img-top" src="https://cdn-prod.medicalnewstoday.com/content/images/articles/322/322868/golden-retriever-puppy.jpg" alt="Card image cap">
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="card" style="width: 18rem;">
+            <div class="card">
               <img class="card-img-top" src="https://cdn-prod.medicalnewstoday.com/content/images/articles/322/322868/golden-retriever-puppy.jpg" alt="Card image cap">
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="card" style="width: 18rem;">
+            <div class="card">
               <img class="card-img-top" src="https://cdn-prod.medicalnewstoday.com/content/images/articles/322/322868/golden-retriever-puppy.jpg" alt="Card image cap">
             </div>
           </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="card" style="width: 18rem;">
-                  <img class="card-img-top" src="https://cdn-prod.medicalnewstoday.com/content/images/articles/322/322868/golden-retriever-puppy.jpg" alt="Card image cap">
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="card" style="width: 18rem;">
-                  <img class="card-img-top" src="https://cdn-prod.medicalnewstoday.com/content/images/articles/322/322868/golden-retriever-puppy.jpg" alt="Card image cap">
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="card" style="width: 18rem;">
-                  <img class="card-img-top" src="https://cdn-prod.medicalnewstoday.com/content/images/articles/322/322868/golden-retriever-puppy.jpg" alt="Card image cap">
-                </div>
-              </div>
-                </div>
+
       </div>
     </div>
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <div class="input-group mb-3">
+            <div class="input-group mb-3 row">
               <div class="input-group-prepend">
-        <span class="input-group-text" id="basic-addon1"></span>
         </div>
+        <div class="col-md-12">
         <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        <div id="icons" class="col-md-2">
+        <i id="camera" class="fas fa-camera"></i> <i id="marker" class="fas fa-map-marker-alt"></i>
+      </div>
           </div>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
-          </div>
-          <div id="modalicons" class="modal-body">
-            <i id="camera" class="fas fa-camera"></i> <i id="marker" class="fas fa-map-marker-alt"></i>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
