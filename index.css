@@ -4,13 +4,24 @@ body{
 #wrapper{
   background-color: lightgrey;
 }
+#headertitle{
+    font-family: 'Marck Script', cursive;
+    font-size: 30px;
+    color: grey;
+}
+#navbar{
+  display: flex;
+}
 #navbarright{
   display: flex;
   flex-direction: row;
 }
 #layout{
-  padding-top: 50px;
+  padding-top: 60px;
   background-color: white;
+}
+#cog{
+  font-size: 30px;
 }
 #list{
   display: flex;
